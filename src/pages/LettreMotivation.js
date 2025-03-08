@@ -20,7 +20,7 @@ const LettreMotivation = () => {
                     </p>
 
                     <p className="mb-4">
-                        Fort d’une expérience de <strong>27 ans</strong> dans le domaine industriel, où j’ai évolué de simple opérateur à
+                        Fort d’une expérience de <strong>24 ans</strong> dans le domaine industriel, où j’ai évolué de simple opérateur à
                         <strong> régleur robotier</strong> sur des machines de haute précision, j’ai décidé de me reconvertir pour suivre ma véritable passion :
                         l’informatique et les nouvelles technologies.
                     </p>
