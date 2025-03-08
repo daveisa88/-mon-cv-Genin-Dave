@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"; // ✅ Importation d'Analytics
 import Profile from "./components/Profile";
 import Navigation from "./components/Navigation";
 import LettreMotivation from "./pages/LettreMotivation";
@@ -34,6 +35,9 @@ function App() {
                     <Route path="/experience" element={<Experience />} />
                     <Route path="/hobbies" element={<Hobbies />} />
                 </Routes>
+
+                {/* ✅ Vercel Analytics */}
+                <Analytics />
             </div>
         </Router>
     );
