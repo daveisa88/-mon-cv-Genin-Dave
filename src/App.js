@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react"; // ✅ Importation d'Analytics
+import { SpeedInsights } from "@vercel/speed-insights/react"; // Importation du Speed Insights
 import Profile from "./components/Profile";
 import Navigation from "./components/Navigation";
 import LettreMotivation from "./pages/LettreMotivation";
@@ -26,6 +26,7 @@ function App() {
                         <>
                             <Profile />
                             <Navigation />
+                            <SpeedInsights /> {/* Ajout du Speed Insights */}
                         </>
                     } />
                     <Route path="/lettre" element={<LettreMotivation />} />
@@ -35,9 +36,6 @@ function App() {
                     <Route path="/experience" element={<Experience />} />
                     <Route path="/hobbies" element={<Hobbies />} />
                 </Routes>
-
-                {/* ✅ Vercel Analytics */}
-                <Analytics />
             </div>
         </Router>
     );
