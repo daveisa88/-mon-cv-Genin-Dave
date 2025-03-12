@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
-        <div className="bg-blue-900 p-6 rounded-lg shadow-lg backdrop-blur-md bg-opacity-90 w-[400px] mx-auto mt-4">
+        <div className="bg-blue-900 p-6 rounded-lg shadow-lg backdrop-blur-md bg-opacity-90 w-[400px] mx-auto mt-2">
             <nav className="flex flex-wrap justify-center gap-4">
                 {[
                     { path: "/contact", label: "📍 Coordonnées" }, // Coordonnées en premier
