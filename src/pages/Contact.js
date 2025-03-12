@@ -66,6 +66,15 @@ const Contact = () => {
                         <button className="bg-green-600 hover:bg-green-800 w-full text-white py-3 rounded-lg flex items-center justify-center gap-2">
                             📱 Téléphone : 07 49 67 91 48
                         </button>
+
+                        {/* ✅ Adresse et date de naissance */}
+                        <div className="mt-4 text-center bg-blue-600 p-4 rounded-lg shadow-md w-full">
+                            <p className="text-lg font-bold">📍 Adresse :</p>
+                            <p>311 rue des Aulnées</p>
+                            <p>88600 Gugnecourt</p>
+                            <p className="mt-3 text-lg font-bold">🎂 Date de naissance :</p>
+                            <p>9 août 1976</p>
+                        </div>
                     </div>
 
                     {/* 📌 Colonne de droite : Annotations et RDV */}
@@ -118,3 +127,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
