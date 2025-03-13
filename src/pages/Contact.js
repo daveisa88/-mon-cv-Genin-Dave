@@ -64,7 +64,7 @@ const Contact = () => {
 
                         {/* ✅ Téléphone */}
                         <button className="bg-green-600 hover:bg-green-800 w-full text-white py-3 rounded-lg flex items-center justify-center gap-2">
-                            📱 Téléphone : 07 49 67 91 48
+                            📱 Téléphone : 07 49 67 95 48
                         </button>
 
                         {/* ✅ Adresse et date de naissance */}
