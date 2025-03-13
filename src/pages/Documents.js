@@ -25,7 +25,7 @@ const Documents = () => {
                 <h2 className="text-2xl font-bold mb-4 text-center">Documents à Télécharger</h2>
 
                 {/* ✅ Bouton d'accès aux documents */}
-                <a href="https://drive.google.com/drive/folders/1CkuNFKXCGiqqGU1o9GR3ggpcZdtCcW-s?usp=sharing"
+                <a href="https://www.dropbox.com/scl/fo/y98htql9gz2ijccp6fq7o/ANv3T3E0q73CkO-klz2CCbA?rlkey=1myl9qe2faaq3d740jrjj54vp&st=ozvs01jz&dl=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full">
