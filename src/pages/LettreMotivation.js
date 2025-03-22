@@ -29,49 +29,41 @@ const LettreMotivation = () => {
                     <p className="mb-4"><strong>Madame, Monsieur,</strong></p>
 
                     <p className="mb-4">
-                        <strong>Candidature au poste de Technicien Informatique – Réf. 2025-1830348</strong><br />
-                        Monsieur Roussel,Monsieur Millet
+                        <strong>Candidature pour un poste dans le domaine informatique</strong><br />
+                        Madame, Monsieur
                     </p>
 
                     <p className="mb-4">
-                        Passionné par l’informatique depuis de nombreuses années, j’ai entamé une reconversion après plus de 20 ans passés dans l’industrie automobile, dont <strong>24 ans</strong> dans le domaine industriel en tant qu’<strong>opérateur puis régleur robotier</strong> sur des machines de haute précision.
+                        Après plus de 20 ans d’expérience dans le secteur industriel, j’ai choisi de me reconvertir dans un domaine qui me passionne : l’informatique. Titulaire d’un diplôme en <strong>assistance informatique et cybersécurité en entreprise</strong>, je me suis engagé pleinement dans ce nouveau parcours professionnel.
                     </p>
 
                     <p className="mb-4">
-                        Diplômé en <strong>assistance informatique et cybersécurité en entreprise</strong>, j’ai mis à profit mes compétences dans un cadre professionnel en occupant bénévolement, depuis deux ans, le poste de <strong>technicien helpdesk et administrateur Google Workspace</strong> chez Gaea21. J’y assure le support utilisateurs, la résolution d’incidents techniques ainsi que la gestion de l’environnement collaboratif.
+                        Depuis deux ans, j’interviens bénévolement en tant que <strong>technicien helpdesk et administrateur Google Workspace</strong> chez Gaea21. Mon rôle consiste à assurer le support utilisateurs, résoudre les incidents techniques, et gérer les outils collaboratifs. J’ai également contribué à l’<strong>amélioration d’un CRM dédié à la gestion RH</strong>, en proposant des ajustements fonctionnels adaptés aux besoins des équipes.
                     </p>
 
                     <p className="mb-4">
-                        Mon approche pragmatique, m’a permis de concevoir des solutions efficaces et créatives, adaptées aux besoins spécifiques des utilisateurs (par exemple : <strong>amélioration du CRM pour la gestion des candidatures RH</strong>).
-                    </p>
-
-                    <p className="mb-4">
-                        En parallèle, j’ai mené plusieurs projets personnels ambitieux :
+                        Je complète cette expérience par la réalisation de projets personnels dans le domaine du développement et de la cybersécurité :
                     </p>
 
                     <ul className="list-disc pl-6 mb-4">
-                        <li>Le développement de solutions numériques innovantes (projets autour de <strong>Raspberry Pi</strong> et conception sous <strong>Visual Studio</strong>).</li>
-                        <li>La participation à des défis en cybersécurité sur des plateformes comme <strong>Hack The Box</strong>, stimulant ma curiosité et ma persévérance.</li>
+                        <li>Développement de solutions numériques autour de <strong>Raspberry Pi</strong> et <strong>Visual Studio</strong>.</li>
+                        <li>Participation à des challenges de cybersécurité sur <strong>Hack The Box</strong>.</li>
+                        <li>Simulation de réseaux et scénarios de sécurité dans des <strong>mini-labs virtualisés</strong> (VMs, outils d’analyse, scans).</li>
                     </ul>
 
                     <p className="mb-4">
-                        Conscient des responsabilités associées à ce poste, notamment en matière de <strong>confidentialité, de sécurité informatique</strong> et de respect du <strong>statut spécial encadrant l’administration pénitentiaire</strong>, je suis pleinement disposé à m’investir dans un environnement aussi exigeant que sensible. L’exigence d’une <strong>habilitation au Secret de la défense nationale</strong> est pour moi un engagement que je suis prêt à assumer avec la plus grande rigueur.
+                        Rigoureux, autonome et impliqué, je suis aujourd’hui à la recherche d’un poste dans lequel je pourrai mettre à profit mes compétences, tout en continuant à me perfectionner. Je suis particulièrement attentif aux enjeux de <strong>confidentialité, de sécurité informatique</strong> et de fiabilité des systèmes.
                     </p>
 
                     <p className="mb-4">
-                        Le poste proposé à la <strong>Maison d’arrêt d’Épinal</strong> m’attire par la diversité de ses missions, la richesse de son environnement technique et les valeurs qu’il incarne. Sérieux, polyvalent et réactif, je souhaite aujourd’hui mettre mes compétences au service du <strong>ministère de la Justice</strong> et contribuer au bon fonctionnement de vos systèmes informatiques.
-                    </p>
-
-                    <p className="mb-4">
-                        Je reste à votre disposition pour un entretien à votre convenance.
+                        Je reste à votre disposition pour toute information complémentaire ou pour un entretien à votre convenance.
                     </p>
 
                     <p>
-                        Dans l’attente de votre retour, je vous prie d’agréer, Monsieur MILLET, l’expression de mes salutations distinguées.
+                        Dans l’attente de votre retour, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
                     </p>
 
                     <p className="mt-4 font-semibold">Dave Genin</p>
-
 
                     {/* ✅ Signature */}
                     <p className="mt-6 text-right font-bold text-lg">Dave Genin</p>
