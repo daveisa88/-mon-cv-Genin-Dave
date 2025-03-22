@@ -33,10 +33,17 @@ const Experience = () => {
                             <span className="text-sm opacity-80 flex-shrink-0 mt-2 ">(Novembre 2023 - Aujourd'hui)</span>
                         </div>
                         <ul className="ml-6 list-disc text-sm text-gray-200 mt-4">
-                            <li>Assistance et support IT à distance</li>
-                            <li>Administration Google Workspace et gestion des outils collaboratifs</li>
-                            <li>Développement et maintenance d’outils internes (HTML, Java, PHP sur Google Cloud, Firebase)</li>
+                            <li>
+                                Support utilisateurs en tant que <strong>technicien helpdesk</strong> : assistance reseaux, résolution d’incidents techniques matériels et logiciels.
+                            </li>
+                            <li>
+                                <strong>Administration Google Workspace</strong> : gestion des comptes, sécurisation, maintenance et optimisation de l’environnement collaboratif.
+                            </li>
+                            <li>
+                                Développement et maintenance d’outils internes sur <strong>Google Cloud</strong> et <strong>Firebase</strong> (HTML, Java, PHP).
+                            </li>
                         </ul>
+
                     </li>
 
                     <li className="border-b border-blue-600 pb-4">
