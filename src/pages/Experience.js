@@ -48,14 +48,18 @@ const Experience = () => {
 
                     <li className="border-b border-blue-600 pb-4">
                         <div className="flex justify-between items-center gap-4 mt-4">
-                            <span className="font-extrabold text-lg">🔧 MiniLabs Personnels - Administration Systèmes & Réseaux</span>
-                            <span className="text-sm opacity-80 flex-shrink-0 ">(Projet Personnel)</span>
+                            <span className="font-extrabold text-lg">🔧 MiniLabs Personnels – Administration Systèmes & Réseaux</span>
+                            <span className="text-sm opacity-80 flex-shrink-0">(Projet Personnel – Simulation d’environnements professionnels)</span>
                         </div>
                         <ul className="ml-6 list-disc text-sm text-gray-200 mt-4">
-                            <li>Mise en place d’un environnement Active Directory en virtualisation</li>
-                            <li>Administration de serveurs Windows et Linux pour divers scénarios professionnels</li>
+                            <li>Conception de laboratoires virtuels avec <strong>VMware Workstation</strong> et <strong>VirtualBox</strong> simulant des infrastructures d’entreprise.</li>
+                            <li>Déploiement et gestion d’un <strong>environnement Active Directory</strong> complet avec GPO, DNS, DHCP, partages réseau et authentification centralisée.</li>
+                            <li>Administration de serveurs <strong>Windows Server (2016/2019)</strong> et <strong>Linux (Ubuntu, Debian)</strong> pour des scénarios variés (fichiers, services web, scripts d’automatisation).</li>
+                            <li>Tests de sécurité et durcissement des systèmes (firewall, audits, gestion des accès, supervision légère avec outils open source).</li>
+                            <li>Création de documentation technique pour simuler la gestion IT d’une PME (topologie, procédures, plan de sauvegarde).</li>
                         </ul>
                     </li>
+
 
                     <li>
                         <div className="flex justify-between items-center gap-4">
