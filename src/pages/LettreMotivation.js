@@ -42,7 +42,7 @@ const LettreMotivation = () => {
                     </p>
 
                     <p className="mb-4">
-                        Mon approche pragmatique, que j’aime à comparer à celle de <strong>MacGyver</strong>, m’a permis de concevoir des solutions efficaces et créatives, adaptées aux besoins spécifiques des utilisateurs (par exemple : <strong>amélioration du CRM pour la gestion des candidatures RH</strong>).
+                        Mon approche pragmatique, m’a permis de concevoir des solutions efficaces et créatives, adaptées aux besoins spécifiques des utilisateurs (par exemple : <strong>amélioration du CRM pour la gestion des candidatures RH</strong>).
                     </p>
 
                     <p className="mb-4">
