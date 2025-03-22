@@ -30,7 +30,7 @@ const LettreMotivation = () => {
 
                     <p className="mb-4">
                         <strong>Candidature au poste de Technicien Informatique – Réf. 2025-1830348</strong><br />
-                        Monsieur MILLET,
+                        Monsieur Rouselle,Monsieur Millet
                     </p>
 
                     <p className="mb-4">
