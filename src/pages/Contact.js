@@ -44,7 +44,7 @@ const Contact = () => {
                     <div className="bg-blue-700 text-white p-6 rounded-lg shadow-lg w-full lg:w-1/2 flex flex-col items-center">
 
                         {/* ✅ Boutons de contact */}
-                        <a href="mailto:kalidave@outlook.fr" className="w-full">
+                        <a href="mailto:kalidave.88@outlook.fr" className="w-full">
                             <button className="bg-blue-600 hover:bg-blue-900 w-full text-white py-3 rounded-lg flex items-center justify-center gap-2 mb-2">
                                 📧 Email
                             </button>
