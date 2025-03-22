@@ -32,7 +32,7 @@ const Competences = () => {
                         {/* Systèmes d'exploitation et Virtualisation */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                💻 Systèmes d'exploitation et Virtualisation <span className="text-yellow-400 ml-2 ">★★★★☆</span>
+                                💻 Systèmes d'exploitation et Virtualisation <span className="text-yellow-400 ml-2 ">★★★☆☆</span>
                             </h3>
                             <ul className="pl-6 list-disc text-sm mt-4">
                                 <li>Windows Server (Installation et administration en environnement virtualisé)</li>
@@ -46,7 +46,7 @@ const Competences = () => {
                         {/* Administration Systèmes et Réseaux */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                🌐 Administration Systèmes et Réseaux <span className="text-yellow-400 ml-2 ">★★★★☆</span> 
+                                🌐 Administration Systèmes et Réseaux <span className="text-yellow-400 ml-2 ">★★★☆☆</span> 
                             </h3>
                             <ul className="pl-6 list-disc text-sm mt-4">
                                 <li>Active Directory & DNS (Gestion des utilisateurs, permissions et services réseau)</li>
