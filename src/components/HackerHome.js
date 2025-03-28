@@ -10,7 +10,7 @@ const HackerHome = () => {
   const [nsaImageVisible, setNsaImageVisible] = useState(false);
 
   useEffect(() => {
-    const msg = new SpeechSynthesisUtterance("Alors maintenant ? Installe-toi dans le cuir noir de la DeLoréane Casque sur les oreilles Doc qui dit 1virgule 21 gigawatts  Est départ pour 1985 ");
+    const msg = new SpeechSynthesisUtterance("Alors maintenant ? Installe-toi ");
     msg.rate = 1.8;
     speechSynthesis.speak(msg);
   }, []);
