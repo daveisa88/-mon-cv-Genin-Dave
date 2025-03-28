@@ -84,19 +84,20 @@ const HackerHome = () => {
           setEasterEggVisible(true);
 
           const sound = new Audio("/sound/back-to-future-doc.mp3");
-          sound.volume = 0.8;
-          sound.play().catch((err) => console.warn("Audio error:", err));
+sound.volume = 1;
+sound.loop = true; // 🔁 active la boucle
+sound.play().catch((err) => console.warn("Audio error:", err));
 
-          setTimeout(() => {
-            setEasterEggVisible(false);
-            sound.pause();
-            sound.currentTime = 0;
-          }, 10000);
-        }, 5000);
+setTimeout(() => {
+  setEasterEggVisible(false);
+  sound.pause();
+  sound.currentTime = 0;
+}, 10000); // Le son se coupe proprement à la fin de l'easter egg
+        }, 4000);
         return;
      
       case "easter":
-        output = "🥚 Bravo mais pas encore ";
+        output = "🥚 Bravo mais pas encore !!! ";
         break;
       default:
         output = `⚠️ ACCESS DENIED : ${input}`;
@@ -122,14 +123,25 @@ const HackerHome = () => {
       )}
 
       {easterEggVisible && (
-        <div className="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center z-50 text-center px-4">
-          <img src="/delorean.png" alt="Delorean" className="w-2/3 max-w-xl animate-fadeInUp" />
-          <p className="text-green-400 text-xl mt-6">
-            🥚 Bravo tu as trouvé un easter egg RH !<br />
-            Dossier planqué au fond du placard retrouvé… supprimé 😈
-          </p>
-        </div>
-      )}
+  <div className="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center z-50 text-center px-4">
+    <img
+      src="/delorean.png"
+      alt="Delorean"
+      className="w-2/3 max-w-xl animate-fadeInUp"
+    />
+
+    <h1 className="text-[2.5rem] md:text-[4rem] text-yellow-400 font-bold mt-8 treasure-shine drop-shadow-xl">
+      🥚🥚 Trésor Déterré ! 🥚🥚
+    </h1>
+
+    <p className="text-yellow-300 text-lg md:text-xl mt-4 font-medium max-w-2xl animate-fadeIn delay-500">
+      Tu viens de découvrir un easter egg rare, caché à travers le code du temps.
+      <br />La DeLorean t’a guidé ici… que le voyage commence !
+    </p>
+  </div>
+)}
+
+
 
       {nsaImageVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center z-50 text-center px-4">

@@ -66,9 +66,7 @@ const Portfolio = () => {
         <ul className="list-disc list-inside text-sm text-gray-300 mb-4">
           <li>Topologie virtuelle avec routeur, pare-feu, machine Windows/Linux</li>
           <li>AD simulé (authentification, GPO, DNS, DHCP)</li>
-          <li>
-            Surveillance : <strong>Suricata</strong>, <strong>Wazuh</strong>, <strong>Wireshark</strong>
-          </li>
+          <li>Surveillance : <strong>Suricata</strong>, <strong>Wazuh</strong>, <strong>Wireshark</strong></li>
           <li>Tests d’intrusion, brute force, filtrage</li>
           <li>Documentation claire : schémas, captures, explications</li>
         </ul>
@@ -81,17 +79,20 @@ const Portfolio = () => {
           <img src={logoAd} alt="Active Directory" className="w-20 h-20 object-contain" />
         </div>
 
-        {/* Capture ou Vidéo */}
+        {/* Vidéo YouTube */}
         <div className="bg-gray-900 p-4 rounded-lg text-center border border-gray-700 mt-6">
           <p className="text-gray-400 mb-2">📸 Capture ou vidéo de la topologie réseau</p>
           <div className="w-full flex justify-center">
-            <video
-              controls
-              className="rounded-md border border-gray-600 max-h-80"
-            >
-              <source src="/videos/Enregistrement-2025-03-28-041531.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la lecture vidéo.
-            </video>
+            <div className="w-full max-w-3xl aspect-video">
+              <iframe
+                className="w-full h-full rounded-md"
+                src="https://www.youtube.com/embed/D1vrQ1OsLUk"
+                title="Mini Lab Réseau Cybersécurité"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
