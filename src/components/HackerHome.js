@@ -94,9 +94,9 @@ const HackerHome = () => {
           }, 10000);
         }, 5000);
         return;
+     
       case "easter":
-      case "clearet":
-        output = "🥚 Bravo tu as trouvé un easter egg RH !\nDossier planqué au fond du placard retrouvé… supprimé 😈";
+        output = "🥚 Bravo mais pas encore ";
         break;
       default:
         output = `⚠️ ACCESS DENIED : ${input}`;
