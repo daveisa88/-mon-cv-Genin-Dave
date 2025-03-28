@@ -54,7 +54,7 @@ const Contact = () => {
 
                         <div className="mt-4 text-green-200 bg-black border border-green-600 p-4 rounded text-sm text-center">
                             <p className="font-bold mb-1">📍 Adresse :</p>
-                            <p>311 rue des Aulnées<br />88600 Gugnecourt</p>
+                            <p> Gugnecourt</p>
                             <p className="mt-3 font-bold">🎂 Date de naissance :</p>
                             <p>9 août 1976</p>
                         </div>
