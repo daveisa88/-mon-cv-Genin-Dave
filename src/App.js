@@ -1,20 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { SpeedInsights } from "@vercel/speed-insights/react"; // Importation du Speed Insights
-import Profile from "./components/Profile";
-import Navigation from "./components/Navigation";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import HackerHome from "./components/HackerHome";
 import LettreMotivation from "./pages/LettreMotivation";
 import Competences from "./pages/Competences";
 import Contact from "./pages/Contact";
 import Documents from "./pages/Documents";
 import Experience from "./pages/Experience";
 import Hobbies from "./pages/Hobbies";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
     return (
         <Router>
             <div className="min-h-screen flex flex-col items-center relative">
-                {/* Image de fond */}
+                {/* Image de fond (tu peux la changer) */}
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center -z-10"
                     style={{ backgroundImage: "url('/background.jpg')" }}
@@ -24,9 +24,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={
                         <>
-                            <Profile />
-                            <Navigation />
-                            <SpeedInsights /> {/* Ajout du Speed Insights */}
+                            <HackerHome />
+                            <SpeedInsights />
                         </>
                     } />
                     <Route path="/lettre" element={<LettreMotivation />} />
@@ -35,6 +34,7 @@ function App() {
                     <Route path="/documents" element={<Documents />} />
                     <Route path="/experience" element={<Experience />} />
                     <Route path="/hobbies" element={<Hobbies />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
                 </Routes>
             </div>
         </Router>
@@ -42,3 +42,4 @@ function App() {
 }
 
 export default App;
+

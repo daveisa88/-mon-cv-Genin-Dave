@@ -9,7 +9,8 @@ const Hobbies = () => {
     return (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 overflow-auto">
             {/* Conteneur principal */}
-            <div className="bg-blue-800 text-white p-8 rounded-lg shadow-lg w-[450px] flex flex-col items-center relative max-h-[90vh] overflow-auto">
+           <div className="bg-black text-green-400 p-8 rounded-lg shadow-lg w-4/5 md:w-3/5 flex flex-col items-center relative max-h-[90vh] overflow-auto border border-green-700">
+
 
                 {/* ✅ Bouton de fermeture */}
                 <button

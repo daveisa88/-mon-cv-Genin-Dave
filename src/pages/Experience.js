@@ -7,10 +7,10 @@ const Experience = () => {
 
     return (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 overflow-auto">
-            {/* ✅ Conteneur principal élargi */}
-            <div className="bg-blue-800 text-white p-8 rounded-lg shadow-lg w-[750px] flex flex-col items-center relative max-h-[90vh] overflow-auto">
+           <div className="bg-black text-green-400 p-8 rounded-lg shadow-lg w-4/5 md:w-3/5 flex flex-col items-center relative max-h-[90vh] overflow-auto border border-green-700">
 
-                {/* ✅ Bouton de fermeture */}
+
+                {/* Bouton de fermeture */}
                 <button
                     className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-500"
                     onClick={() => navigate(-1)}
@@ -18,60 +18,69 @@ const Experience = () => {
                     &times;
                 </button>
 
-                {/* ✅ Logo */}
+                {/* Logo */}
                 <img src={helpdeskLogo} alt="Helpdesk Développement" className="w-40 mb-6 rounded-lg shadow-md" />
 
-                {/* ✅ Titre principal */}
-                <h2 className="text-2xl font-bold mb-4">Expérience Professionnelle</h2>
+                {/* À propos */}
+                <h2 className="text-xl font-bold mb-2">🧠 À propos</h2>
+                <p className="text-sm text-gray-200 text-center mb-6">
+                    Administrateur Systèmes & Réseaux spécialisé en environnements Windows & Linux, avec 2 ans d’expérience en support IT, Google Workspace et développement web. <br />
+                    Autonome, rigoureux et en veille constante, je renforce mes compétences en cybersécurité offensive via des audits techniques, labos personnels, et tests de pénétration.
+                </p>
 
-                {/* ✅ Liste des Expériences avec espacements */}
-                <ul className="text-left w-full space-y-8 overflow-auto max-h-[70vh] px-4">
+                {/* Projets & Réalisations */}
+                <h2 className="text-xl font-bold mb-2">🔍 Projets & Réalisations</h2>
+                <ul className="list-disc text-sm text-gray-200 ml-6 mb-6">
+                    <li><strong>✅ Audit de Sécurité – CHU :</strong> Analyse passive et semi-active, détection de failles (LFI, élévation), rapport de recommandations.</li>
+                    <li><strong>✅ Lab personnel (Mini-SOC & Pentest) :</strong> Active Directory virtualisé, détection d’attaques (Wazuh, Snort, Suricata), durcissement système.</li>
+                </ul>
+
+                {/* Expérience */}
+                <h2 className="text-xl font-bold mb-4">💼 Expérience Professionnelle</h2>
+                <ul className="text-left w-full space-y-8 px-4">
                     <li className="border-b border-blue-600 pb-4">
-                        {/* ✅ Flexbox pour aligner le titre et la date avec un espace */}
-                        <div className="flex justify-between items-center gap-4 mt-4 ">
-                            <span className="font-extrabold text-lg ">🖥️ Gaea21 - IT Helpdesk & Développement</span>
-                            <span className="text-sm opacity-80 flex-shrink-0 mt-2 ">(Novembre 2023 - Aujourd'hui)</span>
+                        <div className="flex justify-between items-center gap-4 mt-4">
+                            <span className="font-extrabold text-lg">🖥️ Gaea21 - IT Helpdesk & Développement</span>
+                            <span className="text-sm opacity-80 flex-shrink-0">(Nov. 2023 - Aujourd’hui)</span>
                         </div>
                         <ul className="ml-6 list-disc text-sm text-gray-200 mt-4">
-                            <li>
-                                Support utilisateurs en tant que <strong>technicien helpdesk</strong> : assistance reseaux, résolution d’incidents techniques matériels et logiciels.
-                            </li>
-                            <li>
-                                <strong>Administration Google Workspace</strong> : gestion des comptes, sécurisation, maintenance et optimisation de l’environnement collaboratif.
-                            </li>
-                            <li>
-                                Développement et maintenance d’outils internes sur <strong>Google Cloud</strong> et <strong>Firebase</strong> (HTML, Java, PHP).
-                            </li>
+                            <li>Support IT utilisateur (N1/N2), résolution d’incidents</li>
+                            <li>Administration Google Workspace : sécurité, comptes, apps</li>
+                            <li>Développement d’outils internes (HTML, PHP, Java sur Firebase)</li>
                         </ul>
-
                     </li>
 
                     <li className="border-b border-blue-600 pb-4">
                         <div className="flex justify-between items-center gap-4 mt-4">
-                            <span className="font-extrabold text-lg">🔧 MiniLabs Personnels – Administration Systèmes & Réseaux</span>
-                            <span className="text-sm opacity-80 flex-shrink-0">(Projet Personnel – Simulation d’environnements professionnels)</span>
+                            <span className="font-extrabold text-lg">🔧 MiniLabs Personnels – Systèmes & Pentest</span>
+                            <span className="text-sm opacity-80 flex-shrink-0">(2022 – Aujourd’hui)</span>
                         </div>
                         <ul className="ml-6 list-disc text-sm text-gray-200 mt-4">
-                            <li>Conception de laboratoires virtuels avec <strong>VMware Workstation</strong> et <strong>VirtualBox</strong> simulant des infrastructures d’entreprise.</li>
-                            <li>Déploiement et gestion d’un <strong>environnement Active Directory</strong> complet avec GPO, DNS, DHCP, partages réseau et authentification centralisée.</li>
-                            <li>Administration de serveurs <strong>Windows Server (2016/2019)</strong> et <strong>Linux (Ubuntu, Debian)</strong> pour des scénarios variés (fichiers, services web, scripts d’automatisation).</li>
-                            <li>Tests de sécurité et durcissement des systèmes (firewall, audits, gestion des accès, supervision légère avec outils open source).</li>
-                            <li>Création de documentation technique pour simuler la gestion IT d’une PME (topologie, procédures, plan de sauvegarde).</li>
+                            <li>Déploiement de scénarios de sécurité (attaque/défense)</li>
+                            <li>Utilisation d’outils open source : pfSense, Zabbix, Suricata</li>
+                            <li>Documentation technique : topologie, sécurité, procédures</li>
                         </ul>
                     </li>
-
 
                     <li>
                         <div className="flex justify-between items-center gap-4">
-                            <span className="font-extrabold text-lg">🏭 Garrett SA - Opérateur Régleur Ligne Automatisée</span>
-                            <span className="text-sm opacity-80 flex-shrink-0 mt-6">(1999 - 2023)</span>
+                            <span className="font-extrabold text-lg">🏭 Garrett SA - Opérateur Régleur</span>
+                            <span className="text-sm opacity-80 flex-shrink-0">(1999 - 2023)</span>
                         </div>
                         <ul className="ml-6 list-disc text-sm text-gray-200 mt-4">
-                            <li>Programmation et réglage des machines automatisées sur ligne de production</li>
-                            <li>Maintenance préventive et corrective des équipements industriels</li>
-                            <li>Optimisation des paramètres pour améliorer la productivité</li>
+                            <li>Programmation et réglage de machines automatisées</li>
+                            <li>Maintenance préventive et corrective</li>
+                            <li>Optimisation continue des lignes de production</li>
                         </ul>
                     </li>
+                </ul>
+
+                {/* Formations */}
+                <h2 className="text-xl font-bold mt-8 mb-2">📚 Formations & Certifications</h2>
+                <ul className="list-disc text-sm text-gray-200 ml-6">
+                    <li>🔐 TryHackMe / HackTheBox (progression régulière)</li>
+                    <li>🎓 Formation cybersécurité (labs, writeups, CVEs)</li>
+                    <li>📜 Certification Google Workspace Admin (en cours)</li>
                 </ul>
             </div>
         </div>

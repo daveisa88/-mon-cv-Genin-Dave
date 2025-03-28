@@ -4,30 +4,201 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 🌍 Reset & global */
 body {
+    @apply bg-black text-green-400 font-mono;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #f4f4f4; /* L�g�re couleur de fond pour l'esth�tique */
+    font-smoothing: antialiased;
+    background-color: #000000;
+    background-size: cover;
 }
 
-/* Conteneur du profil et des boutons */
-.profile-container {
-    @apply flex flex-col items-center justify-center w-full max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10;
+/* 📦 Conteneur principal hacker */
+.hacker-container {
+    @apply flex flex-col items-center min-h-screen p-6;
+    position: relative;
 }
 
-/* Carte du profil */
-.profile-card {
-    @apply w-full text-center p-4;
+/* 🎥 Background GIF Matrix */
+.bg-matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('./assets/matrix.gif'); /* ✅ Chemin relatif depuis index.css */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Boutons de navigation */
-.nav-buttons {
-    @apply flex flex-wrap justify-center gap-4 mt-4;
+/* 🧬 Terminal ligne animée */
+.terminal-line {
+    @apply text-green-500;
+    animation: pulse 1.2s infinite;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
-/* Style des boutons */
-.btn-blue {
-    @apply bg-blue-600 text-white font-semibold py-3 px-5 rounded-lg shadow-md transition-transform transform hover:bg-blue-800 hover:scale-105;
+/* 🔮 Glitch effet */
+.glitch {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .glitch:hover::before,
+    .glitch:hover::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        opacity: 0.8;
+        animation: glitch-fx 0.4s infinite;
+    }
+
+    .glitch:hover::before {
+        color: lime;
+        top: -2px;
+        left: 2px;
+    }
+
+    .glitch:hover::after {
+        color: red;
+        top: 2px;
+        left: -2px;
+    }
+
+@keyframes glitch-fx {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-1px, 1px);
+    }
+
+    40% {
+        transform: translate(2px, -1px);
+    }
+
+    60% {
+        transform: translate(-1px, -1px);
+    }
+
+    80% {
+        transform: translate(1px, 1px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* 💥 Explosion ping */
+@keyframes ping-fast {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.animate-ping-fast {
+    animation: ping-fast 0.8s ease-out;
+}
+
+/* 🧨 Bouton danger */
+.btn-danger {
+    @apply bg-red-600 hover:bg-red-800 text-white font-bold px-4 py-2 rounded;
+}
+
+/* 🎮 Terminal bash visuel */
+.bash-terminal {
+    @apply bg-black border border-green-600 rounded-md text-green-400 p-4 mt-8 w-full max-w-4xl text-left;
+    font-size: 0.85rem;
+    min-height: 120px;
+    white-space: pre-wrap;
+}
+
+.bash-input {
+    @apply w-full bg-transparent outline-none border-none text-green-300;
+}
+
+/* 🎛️ Boutons hacker vert */
+.btn-hacker {
+    @apply bg-green-800 hover:bg-green-800 text-white px-4 py-2 rounded shadow-md transition transform hover:scale-105;
+}
+
+/* 🌠 Animation terminal */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        transform: translate(-1px, 1px);
+    }
+
+    80% {
+        transform: translate(1px, -1px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.glitch-skull {
+    animation: glitch 0.5s infinite;
+    text-shadow: 2px 2px #ff0000, -2px -2px #00ffea;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
 }

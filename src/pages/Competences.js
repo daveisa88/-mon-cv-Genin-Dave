@@ -7,8 +7,8 @@ const Competences = () => {
 
     return (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 overflow-auto">
-            {/* Conteneur principal */}
-            <div className="bg-blue-800 text-white p-8 rounded-lg shadow-lg w-4/5 md:w-3/5 flex flex-col items-center relative max-h-[90vh] overflow-auto">
+           <div className="bg-black text-green-400 p-8 rounded-lg shadow-lg w-4/5 md:w-3/5 flex flex-col items-center relative max-h-[90vh] overflow-auto border border-green-700">
+
 
                 {/* ✅ Bouton de fermeture */}
                 <button
@@ -29,67 +29,67 @@ const Competences = () => {
 
                     {/* 🔹 Colonne 1 */}
                     <div className="space-y-6">
-                        {/* Systèmes d'exploitation et Virtualisation */}
+                        {/* Systèmes & Virtualisation */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                💻 Systèmes d'exploitation et Virtualisation <span className="text-yellow-400 ml-2 ">★★★☆☆</span>
+                                🖥 Systèmes & Virtualisation <span className="text-yellow-400 ml-2">★★★☆☆</span>
                             </h3>
                             <ul className="pl-6 list-disc text-sm mt-4">
-                                <li>Windows Server (Installation et administration en environnement virtualisé)</li>
-                                <li>Debian Linux (Gestion de services réseau et sécurité)</li>
-                                <li>Docker Conteneur</li>
-                                <li>VMware Workstation / VirtualBox / KVM</li>
+                                <li>Windows Server (AD, GPO, DNS, DHCP, RDS)</li>
+                                <li>Linux (Debian/Ubuntu, services réseau, sécurité)</li>
+                                <li>Virtualisation : KVM, VMware, VirtualBox</li>
+                                <li>Docker (conteneurs, réseaux, volumes)</li>
                             </ul>
-
                         </div>
 
-                        {/* Administration Systèmes et Réseaux */}
+                        {/* Réseaux & Sécurité */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                🌐 Administration Systèmes et Réseaux <span className="text-yellow-400 ml-2 ">★★★☆☆</span> 
+                                🌐 Réseaux & Sécurité <span className="text-yellow-400 ml-2">★★★☆☆</span>
                             </h3>
                             <ul className="pl-6 list-disc text-sm mt-4">
-                                <li>Active Directory & DNS (Gestion des utilisateurs, permissions et services réseau)</li>
-                                <li>Pare-feu et Sécurité Réseau</li>
-                                <li>Protocoles Réseau (TCP/IP, DHCP, VLAN, VPN, SSH, RDP, SMB)</li>
+                                <li>Protocoles : TCP/IP, DNS, SSH, SMB, FTP, VPN, VLAN</li>
+                                <li>Pare-feux : iptables, UFW / Fail2Ban</li>
+                                <li>Analyse de trafic : Wireshark, tcpdump</li>
                             </ul>
                         </div>
                     </div>
 
                     {/* 🔹 Colonne 2 */}
                     <div className="space-y-6">
-                        {/* Développement et Automatisation */}
+                        {/* Pentest & Cybersécurité */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                🛠️ Développement et Automatisation <span className="text-yellow-400 ml-2 ">★★★☆☆</span> 
+                                🛡 Pentest & Cybersécurité <span className="text-yellow-400 ml-2">★★★★☆</span>
                             </h3>
-                            <ul className="pl-6 list-disc text-sm mt-4 ">
-                                <li>PowerShell & Bash (Scripts d'automatisation et gestion de serveurs)</li>
-                                <li>HTML, CSS, JavaScript (Développement de solutions web)</li>
+                            <ul className="pl-6 list-disc text-sm mt-4">
+                                <li>Reconnaissance passive (WHOIS, DNS, stack)</li>
+                                <li>Tests d’intrusion : Nmap, WPScan, Gobuster, Metasploit</li>
+                                <li>OSINT, analyse de surface d’attaque</li>
+                                <li>Vulnérabilités : XSS, LFI, IDOR, bruteforce</li>
                             </ul>
                         </div>
 
-                        {/* Supervision et Monitoring */}
+                        {/* Dev & Automatisation */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                📊 Supervision et Monitoring <span className="text-yellow-400 ml-2">★★★☆☆</span>
-
+                                💡 Dev & Automatisation <span className="text-yellow-400 ml-2">★★★☆☆</span>
                             </h3>
                             <ul className="pl-6 list-disc text-sm mt-4">
-                                <li>Zabbix / Nagios (Surveillance d’infrastructures et alertes systèmes)</li>
-                                <li>Wireshark (Analyse de trafic réseau)</li>
-                                <li>Fail2Ban (Sécurisation et protection contre les attaques réseau)</li>
+                                <li>PowerShell, Bash (scripts d'automatisation)</li>
+                                <li>HTML, CSS, JavaScript (outils web internes)</li>
                             </ul>
                         </div>
 
-                        {/* Cybersécurité et Pentesting */}
+                        {/* Supervision & Monitoring */}
                         <div>
                             <h3 className="text-lg font-bold text-blue-300 flex items-center">
-                                🔒 Cybersécurité et Pentesting <span className="text-yellow-400 ml-2">★★★★☆</span> 
+                                📊 Supervision & Monitoring <span className="text-yellow-400 ml-2">★★★☆☆</span>
                             </h3>
                             <ul className="pl-6 list-disc text-sm mt-4">
-                                <li>Tests d’intrusion (Nmap, Metasploit, Gobuster)</li>
-                                <li>OSINT et Analyse Forensique (Collecte d'informations et investigation numérique)</li>
+                                <li>Zabbix, Nagios, Grafana, Uptime Kuma</li>
+                                <li>Wireshark / tcpdump (analyse réseau)</li>
+                                <li>Fail2Ban (protection contre attaques)</li>
                             </ul>
                         </div>
                     </div>

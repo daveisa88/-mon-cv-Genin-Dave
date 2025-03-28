@@ -4,121 +4,98 @@ import helpdeskLogo from "../assets/fond.jpeg";
 
 const Contact = () => {
     const navigate = useNavigate();
-
-    // État pour gérer l'annotation du recruteur
-    const [annotation, setAnnotation] = useState("");
+    const [annotation, setAnnotation] = useState(" ");
     const [savedAnnotation, setSavedAnnotation] = useState("");
 
-    const saveAnnotation = () => {
-        setSavedAnnotation(annotation);
-    };
-
+    const saveAnnotation = () => setSavedAnnotation(annotation);
     const clearAnnotation = () => {
         setAnnotation("");
         setSavedAnnotation("");
     };
 
     return (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 overflow-auto">
-            {/* Conteneur principal */}
-            <div className="bg-blue-800 text-white p-8 rounded-lg shadow-lg w-4/5 md:w-3/5 flex flex-col items-center relative max-h-[90vh] overflow-auto">
-
-                {/* ✅ Bouton de fermeture */}
+        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-90 overflow-auto">
+            <div className="bg-black text-green-400 p-8 rounded-lg shadow-lg w-4/5 md:w-3/5 flex flex-col items-center relative max-h-[90vh] overflow-auto border border-green-700">
+                
+                {/* Bouton de fermeture */}
                 <button
-                    className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-500"
+                    className="absolute top-4 right-4 text-green-500 text-3xl font-bold hover:text-red-600"
                     onClick={() => navigate(-1)}
                 >
-                    &times;
+                    ✖
                 </button>
 
-                {/* ✅ Logo */}
-                <img src={helpdeskLogo} alt="Helpdesk Développement" className="w-40 mb-4 rounded-lg shadow-lg" />
+                {/* Logo */}
+                <img src={helpdeskLogo} alt="Helpdesk" className="w-40 mb-4 rounded-lg shadow" />
 
-                {/* ✅ Titre principal */}
-                <h2 className="text-2xl font-bold mb-6">Contact</h2>
+                {/* Titre */}
+                <h2 className="text-2xl font-bold text-green-400 mb-6">Contact</h2>
 
-                {/* ✅ Contenu avec mise en page responsive */}
-                <div className="flex flex-wrap justify-center gap-10 w-full overflow-auto max-h-[70vh] px-4 lg:flex-nowrap">
-
-                    {/* 📌 Colonne de gauche : Informations de contact */}
-                    <div className="bg-blue-700 text-white p-6 rounded-lg shadow-lg w-full lg:w-1/2 flex flex-col items-center">
-
-                        {/* ✅ Boutons de contact */}
-                        <a href="mailto:kalidave.88@outlook.fr" className="w-full">
-                            <button className="bg-blue-600 hover:bg-blue-900 w-full text-white py-3 rounded-lg flex items-center justify-center gap-2 mb-2">
-                                📧 Email
-                            </button>
+                {/* Mise en page responsive */}
+                <div className="flex flex-wrap justify-center gap-8 w-full overflow-auto max-h-[70vh] px-4 lg:flex-nowrap">
+                    
+                    {/* Partie gauche - Infos contact */}
+                    <div className="bg-gray-900 border border-green-700 p-6 rounded-lg shadow w-full lg:w-1/2">
+                        <a href="mailto:kalidave.88@outlook.fr" className="w-full block mb-2">
+                            <button className="bg-green-800 hover:bg-green-600 w-full py-3 rounded text-white">📧 Email</button>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/dave-genin-9bb33526b" target="_blank" rel="noopener noreferrer" className="w-full">
-                            <button className="w-full bg-blue-500 hover:bg-blue-800 text-white py-3 rounded-lg flex items-center justify-center gap-2 mb-2">
-                                🔗 LinkedIn
-                            </button>
+                        <a href="https://www.linkedin.com/in/dave-genin-9bb33526b" target="_blank" rel="noopener noreferrer" className="w-full block mb-2">
+                            <button className="bg-green-800 hover:bg-green-600 w-full py-3 rounded text-white">🔗 LinkedIn</button>
                         </a>
 
-                        <a href="skype:live:.cid.249b3896c8e815e6?chat" className="w-full">
-                            <button className="bg-blue-600 hover:bg-blue-900 w-full text-white py-3 rounded-lg flex items-center justify-center gap-2 mb-2">
-                                📞 Skype
-                            </button>
+                        <a href="skype:live:.cid.249b3896c8e815e6?chat" className="w-full block mb-2">
+                            <button className="bg-green-800 hover:bg-green-600 w-full py-3 rounded text-white">📞 Skype</button>
                         </a>
 
-                        {/* ✅ Téléphone */}
-                        <button className="bg-green-600 hover:bg-green-800 w-full text-white py-3 rounded-lg flex items-center justify-center gap-2">
+                        <div className="bg-green-700 text-black py-3 rounded text-center font-bold mb-4">
                             📱 Téléphone : 07 49 67 95 48
-                        </button>
+                        </div>
 
-                        {/* ✅ Adresse et date de naissance */}
-                        <div className="mt-4 text-center bg-blue-600 p-4 rounded-lg shadow-md w-full">
-                            <p className="text-lg font-bold">📍 Adresse :</p>
-                            <p>311 rue des Aulnées</p>
-                            <p>88600 Gugnecourt</p>
-                            <p className="mt-3 text-lg font-bold">🎂 Date de naissance :</p>
+                        <div className="mt-4 text-green-200 bg-black border border-green-600 p-4 rounded text-sm text-center">
+                            <p className="font-bold mb-1">📍 Adresse :</p>
+                            <p>311 rue des Aulnées<br />88600 Gugnecourt</p>
+                            <p className="mt-3 font-bold">🎂 Date de naissance :</p>
                             <p>9 août 1976</p>
                         </div>
                     </div>
 
-                    {/* 📌 Colonne de droite : Annotations et RDV */}
+                    {/* Partie droite - Annotations et RDV */}
                     <div className="w-full lg:w-1/2 flex flex-col gap-6">
-
-                        {/* ✅ Annotations du Recruteur */}
-                        <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-bold text-blue-800 mb-3 text-center">Annotations du Recruteur</h3>
+                        {/* Bloc annotation */}
+                        <div className="bg-gray-900 border border-green-700 p-4 rounded shadow">
+                            <h3 className="text-lg font-bold mb-3">📝 Annotations du Recruteur</h3>
                             <textarea
-                                className="w-full h-20 p-2 border border-blue-800 rounded-md"
+                                className="w-full h-24 p-2 bg-black border border-green-600 rounded text-green-300"
                                 placeholder="Écrivez vos annotations ici..."
                                 value={annotation}
                                 onChange={(e) => setAnnotation(e.target.value)}
                             ></textarea>
                             <div className="flex justify-between mt-3">
-                                <button
-                                    onClick={saveAnnotation}
-                                    className="bg-blue-500 text-white py-2 px-4 rounded-lg"
-                                >
+                                <button onClick={saveAnnotation} className="bg-green-700 hover:bg-green-500 text-black py-2 px-4 rounded">
                                     Enregistrer
                                 </button>
-                                <button
-                                    onClick={clearAnnotation}
-                                    className="bg-red-500 text-white py-2 px-4 rounded-lg"
-                                >
+                                <button onClick={clearAnnotation} className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded">
                                     Supprimer
                                 </button>
                             </div>
-                            <div className="mt-3 p-3 bg-white border border-blue-800 rounded-md">
-                                <h4 className="text-blue-800 font-bold">Annotations sauvegardées :</h4>
-                                <p className="text-gray-700">{savedAnnotation || "Aucune annotation sauvegardée pour le moment."}</p>
+                            <div className="mt-3 bg-black border border-green-600 rounded p-2 text-sm">
+                                <p className="font-bold text-green-400">🗂️ Annotations sauvegardées :</p>
+                                <p>{savedAnnotation || "Aucune annotation sauvegardée pour le moment."}</p>
                             </div>
                         </div>
 
-                        {/* ✅ Planifier un Rendez-vous */}
-                        <div className="bg-blue-100 p-6 rounded-lg shadow-lg text-center">
-                            <h3 className="text-xl font-bold text-blue-800 mb-3">Planifier un Rendez-vous</h3>
-                            <p className="text-gray-700">Cliquez sur le bouton ci-dessous pour envoyer un e-mail et planifier un entretien.</p>
-                            <a href="mailto:kalidave@outlook.fr?subject=Demande%20de%20Rendez-vous"
-                                className="mt-4 inline-block bg-green-600 text-white py-2 px-6 rounded-lg">
-                                📅 Planifier un RDV
+                        {/* Bloc planification */}
+                        <div className="bg-gray-900 border border-green-700 p-4 rounded shadow text-center">
+                            <h3 className="text-lg font-bold mb-2">📅 Planifier un Rendez-vous</h3>
+                            <p className="text-green-300 text-sm mb-3">Cliquez ci-dessous pour envoyer un e-mail et planifier un entretien.</p>
+                            <a
+                                href="mailto:kalidave@outlook.fr?subject=Demande%20de%20Rendez-vous"
+                                className="inline-block bg-green-700 hover:bg-green-500 text-black font-bold py-2 px-6 rounded"
+                            >
+                                ✉️ Planifier un RDV
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
