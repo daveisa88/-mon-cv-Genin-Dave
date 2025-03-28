@@ -62,7 +62,7 @@ const HackerHome = () => {
 - Caméra infrarouge
 - VPN + Tails + Tor Browser`;
         break;
-      case "h4ck":
+      case "hack":
         output = "🛡️ Connexion établie à l’intranet de la NSA...";
         setTerminalOutput((prev) => [...prev, `> ${input}`, output]);
         setTerminalInput("");
