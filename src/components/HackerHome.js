@@ -10,7 +10,7 @@ const HackerHome = () => {
   const [nsaImageVisible, setNsaImageVisible] = useState(false);
 
   useEffect(() => {
-    const msg = new SpeechSynthesisUtterance("supér génial ");
+    const msg = new SpeechSynthesisUtterance("super génial ");
     msg.rate = 1.8;
     speechSynthesis.speak(msg);
   }, []);

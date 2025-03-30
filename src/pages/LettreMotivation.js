@@ -65,9 +65,6 @@ const LettreMotivation = () => {
                     </p>
 
                     <p className="mt-4 font-semibold">Dave Genin</p>
-
-                    {/* ✅ Signature */}
-                    <p className="mt-6 text-right font-bold text-lg">Dave Genin</p>
                 </div>
             </div>
         </div>
