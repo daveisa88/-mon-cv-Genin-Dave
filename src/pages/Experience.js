@@ -38,6 +38,21 @@ const Experience = () => {
                 {/* Expérience */}
                 <h2 className="text-xl font-bold mb-4">💼 Expérience Professionnelle</h2>
                 <ul className="text-left w-full space-y-8 px-4">
+                    {/* Circet */}
+                    <li className="border-b border-blue-600 pb-4">
+                        <div className="flex justify-between items-center gap-4 mt-4">
+                            <span className="font-extrabold text-lg">📊 Circet – KPI Data Analyst</span>
+                            <span className="text-sm opacity-80 flex-shrink-0">(Mars 2025 – Aujourd’hui)</span>
+                        </div>
+                        <p className="mt-4 text-sm text-gray-200">
+                            Actuellement KPI Data Analyst chez Circet (mars 2025 – aujourd’hui), j’opère dans un environnement Microsoft 365
+                            (Power Apps, Power Automate, SharePoint/OneDrive) interfacé à une passerelle On-premises Data Gateway (mode standard)
+                            pour automatiser l’ingestion d’exports JSON et leur synchronisation vers Power BI. Je conçois et maintiens des flux
+                            de bout en bout (contrôles, journalisation, alerting), des modèles de données et des tableaux de bord opérationnels
+                            (avancement des équipes terrain, PROD/SAV, indicateurs de GTR).
+                        </p>
+                    </li>
+
                     <li className="border-b border-blue-600 pb-4">
                         <div className="flex justify-between items-center gap-4 mt-4">
                             <span className="font-extrabold text-lg">🖥️ Gaea21 - IT Helpdesk & Développement</span>
@@ -74,6 +89,7 @@ const Experience = () => {
                         </ul>
                     </li>
                 </ul>
+
 
                 {/* Formations */}
                 <h2 className="text-xl font-bold mt-8 mb-2">📚 Formations & Certifications</h2>
